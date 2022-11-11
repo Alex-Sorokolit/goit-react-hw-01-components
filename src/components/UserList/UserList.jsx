@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
 import User from "../User/User";
+import css from "./UserList.module.css";
 function UserList(props) {
   const { items } = props;
   return (
-    <ul>
+    <ul className={css.usersList}>
       {items.map((item) => (
         // Передаємо key - унікальні значення найчастіше id, щоб реакт міг розрізняти елементи
         <li key={item.username}>

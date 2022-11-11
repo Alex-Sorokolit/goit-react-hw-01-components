@@ -14,7 +14,7 @@
     "username": "Emmie Goffer",
     "tag": "bug",
     "location": "Kiev, Ukraine",
-    "avatar": "https://img.icons8.com/color/512/circled-user-female-skin-type-7.png",
+    "avatar": "https://img.icons8.com/color/512/taylor-swift.png",
     "stats": {
       "followers": 5200,
       "views": 1150,
@@ -25,7 +25,7 @@
     "username": "Kristi Gropher",
     "tag": "Designer",
     "location": "Nebraska, USA",
-    "avatar": "https://img.icons8.com/color/512/circled-user-female-skin-type-3--v1.png",
+    "avatar": "https://img.icons8.com/color/512/beyonce.png",
     "stats": {
       "followers": 5200,
       "views": 1150,
@@ -36,11 +36,22 @@
     "username": "Jack Corido",
     "tag": "Admin",
     "location": "Sofia, Luxemburg",
-    "avatar": "https://img.icons8.com/color/512/administrator-male--v1.png",
+    "avatar": "https://img.icons8.com/color/512/salah.png",
     "stats": {
       "followers": 6120,
       "views": 5150,
       "likes": 1130
+    }
+  },
+  {
+    "username": "Alex Baron",
+    "tag": "Table",
+    "location": "Alyaska, Canada",
+    "avatar": "https://img.icons8.com/color/512/user-skin-type-7.png",
+    "stats": {
+      "followers": 5420,
+      "views": 3150,
+      "likes": 2150
     }
   }
 ]

@@ -1,27 +1,36 @@
 import PropTypes from "prop-types";
+import { FaShoePrints, FaEye } from "react-icons/fa";
+import { AiFillLike } from "react-icons/ai";
+import css from "./User.module.css";
 function User(props) {
   const { username, tag, location, avatar, followers, views, likes } = props;
   return (
-    <div className="profile">
+    <div className={css.profile}>
       <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+        <div className={css.thumb}>
+          {" "}
+          <img src={avatar} alt="User avatar" className={css.avatar} />
+        </div>
+        <p className={css.username}>{username}</p>
+        <p className={css.tag}>@{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
+      <ul className={css.stats}>
+        <li className={css.statItem}>
+          <FaShoePrints size={25} />
+          <span className={css.label}>Followers: </span>
+          <span className={css.quantity}>{followers}</span>
         </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
+        <li className={css.statItem}>
+          <FaEye size={25} />
+          <span className={css.label}>Views: </span>
+          <span className={css.quantity}>{views}</span>
         </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
+        <li className={css.statItem}>
+          <AiFillLike size={25} />
+          <span className={css.label}>Likes: </span>
+          <span className={css.quantity}>{likes}</span>
         </li>
       </ul>
     </div>
