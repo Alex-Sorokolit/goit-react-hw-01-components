@@ -1,0 +1,46 @@
+.history {
+  background-color: #fff;
+  font-size: 2em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-collapse: collapse;
+  color: #202020;
+  margin-bottom: 100px;
+}
+
+.row:hover {
+  /* background-color: #fff; */
+  /* filter: saturate(3); */
+
+  /* outline: 3px solid #000; */
+  filter: saturate(2) drop-shadow(0 0 0.75rem rgb(78, 78, 78));
+}
+.invoice {
+  background-color: #c0d8a7;
+  /* filter: saturate(25%); */
+}
+
+.payment {
+  background-color: #cfd4e0;
+  /* filter: saturate(25%); */
+}
+
+.withdrawal {
+  background-color: #f1d5d4;
+  /* filter: saturate(25%); */
+}
+
+.deposit {
+  background-color: #f5e9da;
+  /* filter: saturate(25%); */
+}
+
+.head {
+  padding: 10px;
+  font-size: 40px;
+}
+.data {
+  padding: 10px;
+}
