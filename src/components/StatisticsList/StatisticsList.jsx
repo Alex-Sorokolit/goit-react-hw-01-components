@@ -9,9 +9,11 @@ function StatisticsList(props) {
       <ul className={css.list}>
         {items.map((item) => (
           // Передаємо key - унікальні значення найчастіше id, щоб реакт міг розрізняти елементи
-          <li key={item.id}>
-            <Statistics title={item.label} stats={item.percentage} />
-          </li>
+          <Statistics
+            key={item.id}
+            title={item.label}
+            stats={item.percentage}
+          />
         ))}
       </ul>
     </div>

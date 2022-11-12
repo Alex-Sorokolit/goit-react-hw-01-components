@@ -7,17 +7,17 @@ function UserList(props) {
     <ul className={css.usersList}>
       {items.map((item) => (
         // Передаємо key - унікальні значення найчастіше id, щоб реакт міг розрізняти елементи
-        <li key={item.username}>
-          <User
-            username={item.username}
-            avatar={item.avatar}
-            tag={item.tag}
-            location={item.location}
-            followers={item.stats.followers}
-            views={item.stats.views}
-            likes={item.stats.likes}
-          />
-        </li>
+
+        <User
+          key={item.username}
+          username={item.username}
+          avatar={item.avatar}
+          tag={item.tag}
+          location={item.location}
+          followers={item.stats.followers}
+          views={item.stats.views}
+          likes={item.stats.likes}
+        />
       ))}
     </ul>
   );

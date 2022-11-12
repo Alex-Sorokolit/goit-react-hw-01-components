@@ -8,10 +8,10 @@ function Statistics(props) {
   // у властивості є крапка тому її замінюємо на пустоту
   // console.log(css[title.replace(".", "")]);
   return (
-    <div className={`${css.wrap} ${css[title.replace(".", "")]}`}>
+    <li className={`${css.item} ${css[title.replace(".", "")]}`}>
       <span className={css.label}>{title}</span>
       <span className={css.percentage}>{stats}%</span>
-    </div>
+    </li>
   );
 }
 

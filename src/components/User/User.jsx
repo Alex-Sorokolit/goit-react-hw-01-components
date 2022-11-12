@@ -5,7 +5,7 @@ import css from "./User.module.css";
 function User(props) {
   const { username, tag, location, avatar, followers, views, likes } = props;
   return (
-    <div className={css.profile}>
+    <li className={css.profile}>
       <div className="description">
         <div className={css.thumb}>
           {" "}
@@ -33,7 +33,7 @@ function User(props) {
           <span className={css.quantity}>{likes}</span>
         </li>
       </ul>
-    </div>
+    </li>
   );
 }
 

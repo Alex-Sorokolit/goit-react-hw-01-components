@@ -8,7 +8,13 @@
   align-items: center;
   margin-bottom: 30px;
   background-color: #25272b;
-  padding: 30px;
+  padding: 20px;
+
+  background: linear-gradient(180deg, #2c3036 0%, #0e1114 100%);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25),
+    -3px -3px 4px rgba(255, 255, 255, 0.188);
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.492);
 }
 
 .title {
@@ -16,6 +22,7 @@
   font-size: 3em;
   margin-bottom: 20px;
   color: #fff;
+  margin-top: 0;
 }
 
 .list {

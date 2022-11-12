@@ -1,4 +1,6 @@
 .usersList {
+  margin-left: auto;
+  margin-right: auto;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 270px));
@@ -6,5 +8,5 @@
   padding-left: 16px;
   padding-right: 16px;
   background-color: #25272b;
-  padding: 100px;
+  padding: 30px;
 }
