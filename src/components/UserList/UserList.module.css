@@ -1,8 +1,10 @@
 .usersList {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 270px));
   gap: 24px;
   padding-left: 16px;
   padding-right: 16px;
+  background-color: #25272b;
+  padding: 100px;
 }

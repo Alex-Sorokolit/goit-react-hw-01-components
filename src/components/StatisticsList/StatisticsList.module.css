@@ -1,0 +1,26 @@
+.statistic {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #25272b;
+  padding: 30px;
+}
+
+.title {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
