@@ -3,10 +3,10 @@ import css from "./Statistics.module.css";
 
 function Statistics(props) {
   const { title, stats } = props;
-  // console.log(css);
+  console.log(css);
   // console.log(title);
   // у властивості є крапка тому її замінюємо на пустоту
-  // console.log(css[title.replace(".", "")]);
+  console.log(css[title.replace(".", "")]);
   return (
     <li className={`${css.item} ${css[title.replace(".", "")]}`}>
       <span className={css.label}>{title}</span>
