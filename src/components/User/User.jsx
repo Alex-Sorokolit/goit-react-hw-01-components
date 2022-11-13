@@ -1,39 +1,50 @@
 import PropTypes from "prop-types";
 import { FaShoePrints, FaEye } from "react-icons/fa";
 import { AiFillLike } from "react-icons/ai";
+import {
+  Profile,
+  StatItem,
+  Tag,
+  Thumb,
+  UserName,
+  Stats,
+  Location,
+  Label,
+  Quantity,
+} from "./User.styled";
 import css from "./User.module.css";
 function User(props) {
   const { username, tag, location, avatar, followers, views, likes } = props;
   return (
-    <li className={css.profile}>
+    <Profile>
       <div className="description">
-        <div className={css.thumb}>
+        <Thumb>
           {" "}
           <img src={avatar} alt="User avatar" className={css.avatar} />
-        </div>
-        <p className={css.username}>{username}</p>
-        <p className={css.tag}>@{tag}</p>
-        <p className={css.location}>{location}</p>
+        </Thumb>
+        <UserName>{username}</UserName>
+        <Tag>@{tag}</Tag>
+        <Location>{location}</Location>
       </div>
 
-      <ul className={css.stats}>
-        <li className={css.statItem}>
+      <Stats>
+        <StatItem>
           <FaShoePrints size={25} />
-          <span className={css.label}>Followers: </span>
-          <span className={css.quantity}>{followers}</span>
-        </li>
-        <li className={css.statItem}>
+          <Label>Followers: </Label>
+          <Quantity>{followers}</Quantity>
+        </StatItem>
+        <StatItem>
           <FaEye size={25} />
-          <span className={css.label}>Views: </span>
-          <span className={css.quantity}>{views}</span>
-        </li>
-        <li className={css.statItem}>
+          <label>Views: </label>
+          <Quantity>{views}</Quantity>
+        </StatItem>
+        <StatItem>
           <AiFillLike size={25} />
-          <span className={css.label}>Likes: </span>
-          <span className={css.quantity}>{likes}</span>
-        </li>
-      </ul>
-    </li>
+          <label>Likes: </label>
+          <Quantity>{likes}</Quantity>
+        </StatItem>
+      </Stats>
+    </Profile>
   );
 }
 

@@ -1,4 +1,6 @@
-.statistic {
+import styled from "@emotion/styled";
+
+export const Statistic = styled.div`
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
@@ -15,19 +17,19 @@
     -3px -3px 4px rgba(255, 255, 255, 0.188);
   border-radius: 10px;
   color: rgba(255, 255, 255, 0.492);
-}
+`;
 
-.title {
+export const StatTitle = styled.h2`
   text-align: center;
   font-size: 3em;
   margin-bottom: 20px;
   color: #fff;
   margin-top: 0;
-}
+`;
 
-.list {
+export const StatList = styled.ul`
   margin: 0;
   padding: 0;
   display: flex;
   list-style: none;
-}
+`;

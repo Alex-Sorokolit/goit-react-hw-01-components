@@ -1,17 +1,18 @@
 import PropTypes from "prop-types";
-import css from "./Statistics.module.css";
+import { StatisticItem, TypeDocument, Upload } from "./Statistic.styled";
 
 function Statistics(props) {
   const { title, stats } = props;
-  console.log(css);
+  // console.log(css);
   // console.log(title);
   // у властивості є крапка тому її замінюємо на пустоту
-  console.log(css[title.replace(".", "")]);
+  // console.log(css[title.replace(".", "")]);
+  // className={`${css.item} ${css[title.replace(".", "")]}`}
   return (
-    <li className={`${css.item} ${css[title.replace(".", "")]}`}>
-      <span className={css.label}>{title}</span>
-      <span className={css.percentage}>{stats}%</span>
-    </li>
+    <StatisticItem doc={title}>
+      <TypeDocument>{title}</TypeDocument>
+      <Upload>{stats}%</Upload>
+    </StatisticItem>
   );
 }
 

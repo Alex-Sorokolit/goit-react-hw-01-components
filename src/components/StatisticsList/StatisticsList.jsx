@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
 import Statistics from "../Statistics/Statistics";
-import css from "./StatisticsList.module.css";
+import { Statistic, StatTitle, StatList } from "./StatisticList.styled";
+
 function StatisticsList(props) {
   const { items } = props;
   return (
-    <div className={css.statistic}>
-      <h2 className={css.title}>Upload stats</h2>
-      <ul className={css.list}>
+    <Statistic>
+      <StatTitle>Upload stats</StatTitle>
+      <StatList>
         {items.map((item) => (
           // Передаємо key - унікальні значення найчастіше id, щоб реакт міг розрізняти елементи
           <Statistics
@@ -15,8 +16,8 @@ function StatisticsList(props) {
             stats={item.percentage}
           />
         ))}
-      </ul>
-    </div>
+      </StatList>
+    </Statistic>
   );
 }
 // Перевірка чи присутній обов'язковий атрибут id в масиві arrayOf об'єктів shape

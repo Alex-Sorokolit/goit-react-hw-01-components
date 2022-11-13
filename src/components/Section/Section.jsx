@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
 import { Children } from "react";
-import css from "./Section.module.css";
+import { SectionName } from "./Section.styled";
+
 function Section(props) {
   const { title, children } = props;
   return (
-    <div className="section">
+    <div>
       {/* Якщо title є, то рендедримо h2 */}
-      {title && <h2 className={css.title}>{title}</h2>}
+      {title && <SectionName>{title}</SectionName>}
       {children}
     </div>
   );
